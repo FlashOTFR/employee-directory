@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/employee-directory/static/css/main.72411424.chunk.css",
+    "main.js": "/employee-directory/static/js/main.063f1c98.chunk.js",
+    "main.js.map": "/employee-directory/static/js/main.063f1c98.chunk.js.map",
+    "runtime-main.js": "/employee-directory/static/js/runtime-main.3cbf02f2.js",
+    "runtime-main.js.map": "/employee-directory/static/js/runtime-main.3cbf02f2.js.map",
+    "static/js/2.2a03cd6f.chunk.js": "/employee-directory/static/js/2.2a03cd6f.chunk.js",
+    "static/js/2.2a03cd6f.chunk.js.map": "/employee-directory/static/js/2.2a03cd6f.chunk.js.map",
+    "index.html": "/employee-directory/index.html",
+    "precache-manifest.281c8175cd11ca94d14e136e2abec047.js": "/employee-directory/precache-manifest.281c8175cd11ca94d14e136e2abec047.js",
+    "service-worker.js": "/employee-directory/service-worker.js",
+    "static/css/main.72411424.chunk.css.map": "/employee-directory/static/css/main.72411424.chunk.css.map",
+    "static/js/2.2a03cd6f.chunk.js.LICENSE.txt": "/employee-directory/static/js/2.2a03cd6f.chunk.js.LICENSE.txt",
+    "static/media/header.css": "/employee-directory/static/media/Henry_Winkler.960e6d76.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cbf02f2.js",
+    "static/js/2.2a03cd6f.chunk.js",
+    "static/css/main.72411424.chunk.css",
+    "static/js/main.063f1c98.chunk.js"
+  ]
+}
