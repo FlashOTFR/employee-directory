@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div className="header-title">
+        <div className="header-title" id="head-title">
           {" "}
           <h2>Employee Directory</h2>
           <h3>Narrow search results with options</h3>

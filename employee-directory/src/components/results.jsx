@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/results.css";
 
-function Results({ persons }, { filteredPersons }) {
+function Results({ persons }, { filteredPersons }, handleSort) {
   return (
     <div className="container">
       {" "}
@@ -9,11 +9,13 @@ function Results({ persons }, { filteredPersons }) {
         <table className="table table-striped table-dark table-sortable">
           <thead>
             <tr>
-              <th scope="col">Image</th>
-              <th scope="col">Name</th>
-              <th scope="col">Phone</th>
-              <th scope="col">Email</th>
-              <th scope="col">DOB</th>
+              <th>Image</th>
+              <th>
+                <div onClick={() => handleSort(persons)}>Name</div>
+              </th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>DOB</th>
             </tr>
           </thead>
           <tbody>
@@ -31,10 +33,6 @@ function Results({ persons }, { filteredPersons }) {
           </tbody>
         </table>
       </div>
-      {/* <Row>
-          <Col size="md-8"></Col>
-          <Col size="md-4"></Col>
-        </Row> */}
     </div>
   );
 }

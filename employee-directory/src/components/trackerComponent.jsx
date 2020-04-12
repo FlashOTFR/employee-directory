@@ -3,14 +3,22 @@ import Header from './header.jsx';
 import Search from './searchBar';
 import Results from './results';
 import axios from 'axios';
+import orderBy from 'lodash/orderBy';
 
+const invertDirection = {
+    asc: "desc",
+    desc: "asc"
+  };
 class Tracker extends Component {
     constructor(props) {
         super(props);
         this.state = { 
             persons: [],
-            filteredPersons: []
-         };
+            filteredPersons: [],
+            columnToSort: "",
+            sortDirection: "desc",
+         }
+
     }
     
     componentDidMount() {
@@ -25,6 +33,17 @@ class Tracker extends Component {
         });
     }
     
+
+    handleSort = columnName => {
+        this.setState(state => ({
+          columnToSort: columnName,
+          sortDirection:
+            state.columnToSort === columnName
+              ? invertDirection[state.sortDirection]
+              : "asc"
+        }));
+      };
+
 
     handleInputChange = event => {
         const searchInput = event.target.value;
@@ -44,10 +63,13 @@ class Tracker extends Component {
         return ( 
             <div>
                 <Header />
-                <h1>check out this ish</h1>
                 <Search handleInputChange={this.handleInputChange} />
-                <h1>You ain't never not never not ever not been ready not for this what.</h1>
-                <Results persons={this.state.filteredPersons} />
+                <Results 
+                persons={this.state.filteredPersons}
+                columnToSort={this.state.columnToSort}
+                sortDirection={this.state.sortDirection}
+                handleSort={this.handleSort}
+                />
             </div>
          );
     }
