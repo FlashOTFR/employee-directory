@@ -1,17 +1,28 @@
 import React from "react";
-import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";
+import "../styles/search.css";
 
-const SearchPage = () => {
+function Search({ handleInputChange }) {
   return (
-    <MDBCol md="12">
-      <MDBFormInline className="md-form mr-auto mb-4">
-        <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-        <MDBBtn outline color="warning" rounded size="sm" type="submit" className="mr-auto">
-          Search
-        </MDBBtn>
-      </MDBFormInline>
-    </MDBCol>
+    <div>
+      <div className="search-bar">
+        <label className="dob-label" htmlFor="dob">
+          DOB
+        </label>
+        <input
+          type="date"
+          id="dob"
+          onChange={handleInputChange}
+          name="dob"
+        ></input>
+        <input type="date" id="enddate" name="enddate"></input>
+        <input
+          type="text"
+          placeholder="Search here"
+          onChange={handleInputChange}
+        ></input>
+      </div>
+    </div>
   );
 }
 
-export default SearchPage;
+export default Search;

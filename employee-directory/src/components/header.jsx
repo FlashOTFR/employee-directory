@@ -1,12 +1,19 @@
-import React from 'react';
+  
+import React, { Component } from "react";
+import "../styles/header.css";
 
-
-function Header() {
+class Header extends Component {
+  render() {
     return (
-        <nav className="navbar navbar-dark bg-dark">
-        <span className="navbar-brand mb-0 h1">SAY IT TO MY FACE</span>
-      </nav>
+      <header>
+        <div className="header-title">
+          {" "}
+          <h2>Employee Directory</h2>
+          <h3>Narrow search results with options</h3>
+        </div>
+      </header>
     );
+  }
 }
 
 export default Header;

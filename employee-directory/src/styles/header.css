@@ -1,0 +1,29 @@
+
+header {
+    height: 360px;
+    background-image: url("../Henry_Winkler.png");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-color: rgb(51, 77, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+  }
+  .header-message {
+    padding-top: 70px;
+    padding-right: 30px;
+    color: black;
+  }
+  .head-title {
+    font-size: 90px;
+    font-family: "Franklin Gothic Medium";
+    color: black;
+    font-weight: bold;
+  }
+  p {
+    color: gray;
+  
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
